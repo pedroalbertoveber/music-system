@@ -4,6 +4,7 @@ import uuid from "react-uuid";
 // Components
 import Form from "./components/Form"
 import Header from "./components/Header"
+import Playlist from "./components/Playlist";
 import { Music } from "./types";
 
 const App =():ReactElement => {
@@ -35,6 +36,12 @@ const App =():ReactElement => {
     setTitle('');
   };
 
+  const deleteMusic = (id: string) => {
+    setPlaylist(playlist => playlist.filter(music => {
+      return music.id !== id;
+    }));
+  };
+
   return (
     <>
       <Header />
@@ -49,6 +56,7 @@ const App =():ReactElement => {
         submit={addMusic}
       />
 
+      <Playlist playlist={playlist} deleteMusic={deleteMusic}/>
     </>
   )
 }
