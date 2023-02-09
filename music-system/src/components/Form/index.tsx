@@ -45,7 +45,7 @@ const Form = ({
       </div>
 
       <div className="w-full flex justify-center items-center">
-        <button type="submit" className="w-full max-w-[300px] py-2 rounded-lg bg-cyber-300 hover:bg-cyber-100 dark:bg-cyber-500 dark:hover:bg-cyber-300 duration-150 text-gray-200 font-bold shadow-sm mt-2">Enviar</button>
+        <button type="submit" className="w-full max-w-[300px] py-2 rounded-lg bg-cyber-300 hover:bg-cyber-100 dark:bg-cyber-500 dark:hover:bg-cyber-300 duration-150 text-gray-200 font-bold shadow-sm mt-2">Submit</button>
       </div>
     </form>
   );
